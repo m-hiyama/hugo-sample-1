@@ -1,0 +1,26 @@
+{{/* layouts/_default/list.html */}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <div>URL: {{ .URL }}</div>
+    <div>Permalink: {{ .Permalink }}</div>
+    <div style="color:red">Template: layouts/_default/list.html</div>
+
+    <h1>{{ .Title }}</h1>
+
+    <ol>
+      {{ range .Data.Pages }}
+      <li>
+	<a href="{{ .Permalink }}">{{ .Title }}</a>
+	<time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+      </li>
+      {{ end }}
+    </ol>
+
+  </body>
+</html>
