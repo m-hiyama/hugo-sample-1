@@ -1,6 +1,7 @@
 *.log
 .REMOTE
 public/
+tmp/
 k.*
 kk.*
 kkk.*

@@ -3,4 +3,3 @@ title = "サンプル 1"
 
 languageCode = "ja-jp"
 metaDataFormat = "yaml" # デフォルトはtoml
-contentdir = "../movie-blog/content"
