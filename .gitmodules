@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = https://github.com/m-hiyama/hugo-sample-content.git
